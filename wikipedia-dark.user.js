@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name           Wikipedia Dark
-// @version        4
-// @grant          none
-// @inject-into    page
+// @version        5
+// @grant          GM.addStyle
+// @grant          GM_addStyle
 // @run-at         document-end
 // @include        http://*.*wiki*.org/*
 // @include        https://*.*wiki*.org/*
@@ -10,10 +10,8 @@
 // ==/UserScript==
 
 (function () {
-	let style = document.createElement('style');
-	style.innerText = [
+	(GM.addStyle || GM_addStyle)([
 		'@import "https://en.wikipedia.org/w/index.php?title=MediaWiki:Gadget-dark-mode.css&action=raw&ctype=text/css"',
 		'screen and (prefers-color-scheme: dark);'
-	].join();
-	document.head.appendChild(style);
+	].join());
 })();
