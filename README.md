@@ -1,3 +1,1 @@
-# My UserScripts collection
-
-* [Wikipedia Dark](wikipedia-dark.user.js)
+#### [Wikipedia Dark](wikipedia-dark.user.js)
