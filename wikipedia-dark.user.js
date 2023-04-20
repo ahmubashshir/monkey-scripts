@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name           Wikipedia Dark
-// @version        3
+// @version        4
 // @grant          none
 // @inject-into    page
+// @run-at         document-end
 // @include        http://*.*wiki*.org/*
 // @include        https://*.*wiki*.org/*
 // @updateURL      https://ahmubashshir.github.io/monkey-scripts/wikipedia-dark.user.js
