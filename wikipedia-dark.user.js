@@ -5,7 +5,7 @@
 // @inject-into    page
 // @include        http://*.*wiki*.org/*
 // @include        https://*.*wiki*.org/*
-// @installURL     https://ahmubashshir.github.io/monkey-scripts/wikipedia-dark.user.js
+// @updateURL      https://ahmubashshir.github.io/monkey-scripts/wikipedia-dark.user.js
 // ==/UserScript==
 
 (function () {
