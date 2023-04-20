@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name           Fix GameFaqs Single page images
-// @version        2
+// @version        3
 // @grant          none
 // @run-at         document-end
-// @include        /^https?:\/\/gamefaqs\.gamespot\.com\/.+\/.+\/faqs\/[0-9]*\?(|.*&)(single=1)(|&.*)$/
+// @include        /^https?:\/\/gamefaqs\.gamespot\.com\/.+\/.+\/faqs\/[0-9]*(/.+)?\?(|.*&)(single=1)(|&.*)$/
 // @updateURL      https://ahmubashshir.github.io/monkey-scripts/js/gamefaqs-faq-imgs.user.js
 // ==/UserScript==
 (function () {
