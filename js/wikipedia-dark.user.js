@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name           Wikipedia Dark
-// @version        5
+// @version        6
 // @grant          GM.addStyle
 // @grant          GM_addStyle
 // @run-at         document-end
 // @include        http://*.*wiki*.org/*
 // @include        https://*.*wiki*.org/*
-// @updateURL      https://ahmubashshir.github.io/monkey-scripts/wikipedia-dark.user.js
+// @updateURL      https://ahmubashshir.github.io/monkey-scripts/js/wikipedia-dark.user.js
 // ==/UserScript==
 
 (function () {
