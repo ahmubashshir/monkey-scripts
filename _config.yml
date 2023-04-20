@@ -1,0 +1,8 @@
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+# Site info
+title: The Monkey Scripts
+description: My UserScripts collection for FireMonkey (the other monkeys will probably work too)
+show_downloads: false
