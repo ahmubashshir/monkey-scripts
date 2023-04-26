@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name           Keyboard navigation for manga sites [kakalot, nelo]
-// @version        1
+// @version        2
+// @grant          none
 // @run-at         document-end
 // @include        https://*manganato.com/manga-*/chapter-*
 // @include        https://mangakakalot.com/chapter/*/chapter_*
@@ -9,15 +10,13 @@
 
 document.addEventListener('keydown', (ev) => {
 	let elems = () => {
-		let findnav = (sel) => {
+		let testhost = regex => regex.test(location.host);
+		let findnav  = sel => {
 			return {
 				prev: document.querySelector(sel.prev),
 				next: document.querySelector(sel.next)
-			}
+			};
 		};
-		let testhost = (regex) => {
-			return regex.test(location.host);
-		}
 
 		if (testhost(/^\w+manganato\.com$/)) return findnav({
 			next: 'a.navi-change-chapter-btn-next',
@@ -27,12 +26,13 @@ document.addEventListener('keydown', (ev) => {
 			next: '.btn-navigation-chap > a.next',
 			prev: '.btn-navigation-chap > a.back'
 		});
-		else return undefined;
+
+		return undefined;
 	};
 
 	switch(ev.key) {
-		case  'ArrowLeft': return elems()?.prev.click();
-		case 'ArrowRight': return elems()?.next.click();
+		case  'ArrowLeft': return elems()?.next?.click?.();
+		case 'ArrowRight': return elems()?.prev?.click?.();
 		default: return undefined;
 	}
-})
+});
