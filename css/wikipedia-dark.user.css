@@ -1,0 +1,11 @@
+/*
+==UserCSS==
+@name           Wikipedia Dark CSS
+@match          http://*.*wiki*.org/*
+@include        https://*.*wiki*.org/*
+@version        1.0
+@updateURL      https://ahmubashshir.github.io/monkey-scripts/css/wikipedia-dark.user.css
+==/UserCSS==
+*/
+
+@import url("https://en.wikipedia.org/w/index.php?title=MediaWiki:Gadget-dark-mode.css&action=raw&ctype=text/css") screen and (prefers-color-scheme: dark);
