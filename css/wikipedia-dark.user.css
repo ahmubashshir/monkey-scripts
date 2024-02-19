@@ -1,7 +1,7 @@
 /*
 ==UserCSS==
 @name           Wikipedia Dark CSS
-@match          http://*.*wiki*.org/*
+@include        http://*.*wiki*.org/*
 @include        https://*.*wiki*.org/*
 @version        1.0
 @updateURL      https://ahmubashshir.github.io/monkey-scripts/css/wikipedia-dark.user.css
