@@ -1,6 +1,6 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-hacker
 plugins:
- - jekyll-theme-minimal
+ - jekyll-theme-hacker
 
 # Site info
 title: The Monkey Scripts
