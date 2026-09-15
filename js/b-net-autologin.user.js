@@ -5,25 +5,14 @@
 // @var text        phone "Phone Number"  undefined
 // @var checkbox    auto  "Auto Login"    0
 // @run-at          document-end
-// @grant           GM.log
-// @version         2.1
+// @version         2.2
 // @updateURL       https://ahmubashshir.github.io/monkey-scripts/js/b-net-autologin.user.js
 // ==/UserScript==
 
 const validate = (value, fail, check, ok) => {
-	const chk = (() => {
-		if (value === "undefined" || value === undefined) {
-			return false;
-		}
-		return true;
-	})();
+	const chk = value !== "undefined" && value !== undefined;
 
-	const mod = (() => {
-		if (typeof (check) === "function") {
-			return Boolean(check(value));
-		}
-		return true;
-	})();
+	const mod = typeof (check) !== "function" || Boolean(check(value));
 
 	if (chk && mod && ok !== undefined) {
 		return ok;
