@@ -4,3 +4,6 @@ theme: jekyll-theme-hacker
 title: The Monkey Scripts
 description: My UserScripts collection for FireMonkey (the other monkeys will probably work too)
 show_downloads: false
+sass:
+  silence_deprecations:
+  - import
